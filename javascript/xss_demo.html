@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>XSS Demo</title></head>
+<body>
+  <h1>Demo XSS (intencionalmente vulnerable)</h1>
+  <input id="inp" placeholder="Escribe aquí…">
+  <button onclick="renderComment(document.getElementById('inp').value)">Render</button>
+  <div id="comments"></div>
+  <script src="xss.js"></script>
+</body>
+</html>
